@@ -10,6 +10,7 @@ on:
     
 env:
   TEST_MONGODB_URI: ${{secrets.TEST_MONGODB_URI}}
+  SECRET: ${{secrets.SECRET}}
 
 jobs:
   simple_deployment_pipeline:
