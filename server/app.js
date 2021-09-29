@@ -45,6 +45,10 @@ app.get('/health', (req, res) => {
   res.send('ok');
 });
 
+app.get('/version', (req, res) => {
+  res.send('1');
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/index.html'));
 });
