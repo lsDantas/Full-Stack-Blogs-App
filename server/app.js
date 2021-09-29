@@ -40,6 +40,11 @@ app.use('/api/login', loginRouter);
 
 // Front End
 app.use(express.static('public'));
+
+app.get('/health', (req, res) => {
+  res.send('ok');
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/index.html'));
 });
