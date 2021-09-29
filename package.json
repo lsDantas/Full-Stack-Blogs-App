@@ -6,6 +6,7 @@
   "scripts": {
     "start": "cd build && NODE_END=production node index.js",
     "build": "cd client && npm run build && cd .. && cp -R server/. build && cp -R client/build/. build/public",
+    "lint": "cd client && npm run eslint && cd ../server/ && npm run lint",
     "test:frontend": "cd client && npm run test",
     "test:backend": "cd server && npm run test",
     "postinstall": "cd client && npm install && cd ../server && npm install --legacy-peer-deps"

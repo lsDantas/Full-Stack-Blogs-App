@@ -1,2 +1,3 @@
 build
 /utils/logger.js
+jest.config.js
